@@ -1,11 +1,19 @@
 {
-    // Change this to match your project
-    "include": ["src/**/*"],
     "compilerOptions": {
-      "allowJs": false,
-      "declaration": true,
-      "emitDeclarationOnly": true,
+      "module": "ESNext",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "ES2020",
+      "noImplicitAny": true,
+      "strict": true,
+      "moduleResolution": "node",
+      "sourceMap": false,
+      "declarationMap": false,
       "outDir": "dist",
-      "declarationMap": true
-    }
+      "skipLibCheck": true,
+      "lib": ["ES2020"],
+      "declaration": true
+    },
+    "include": ["./src/**/*"]
   }
+  
