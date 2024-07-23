@@ -6,8 +6,7 @@
   "author": "Reez <reez@wildster.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "postbuild": "git add dist && git commit --amend --no-edit"
+    "build": "tsc"
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
