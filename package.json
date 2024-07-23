@@ -1,0 +1,13 @@
+{
+  "name": "wildster-types",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Reez <reez@wildster.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
