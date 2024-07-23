@@ -10,10 +10,10 @@
     "postbuild": "git add dist && git commit --amend --no-edit"
   },
   "devDependencies": {
-    "pre-push": "^0.1.4",
+    "pre-commit": "^1.2.2",
     "typescript": "^5.5.4"
   },
-  "pre-push": {
+  "pre-commit": {
     "run": "build",
     "silent": false
   }

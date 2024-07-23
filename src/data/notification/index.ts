@@ -1,4 +1,4 @@
-import { NotificationGroup } from "../../types/notification";
+import { NotificationGroup } from "../../types/notification/index.js";
 
 export const Notifications: NotificationGroup[] = [
   {
