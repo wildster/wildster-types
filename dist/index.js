@@ -1,1 +1,1 @@
-export { Notifications } from "./data/notification/index";
+export { Notifications } from "./data/notification/index.js";
