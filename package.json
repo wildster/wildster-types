@@ -5,14 +5,15 @@
   "author": "Reez <reez@wildster.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "git add dist && git commit --amend --no-edit"
   },
   "devDependencies": {
     "pre-push": "^0.1.4",
     "typescript": "^5.5.4"
   },
-  "prepush.silent": false,
-  "pre-push": [
-    "build"
-  ]
+  "pre-push": {
+    "run": "build",
+    "silent": false
+  }
 }
