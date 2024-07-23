@@ -11,6 +11,7 @@
     "pre-push": "^0.1.4",
     "typescript": "^5.5.4"
   },
+  "prepush.silent": false,
   "pre-push": [
     "build"
   ]
