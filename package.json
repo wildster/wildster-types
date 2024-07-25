@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "postinstall": "git add dist"
+    "postbuild": "git add dist"
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
