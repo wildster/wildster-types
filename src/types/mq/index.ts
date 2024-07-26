@@ -90,9 +90,17 @@ export type IndexerMessage = {
   };
 };
 
+export type UserMessage = {
+  provider_activity_submitted_for_review: {
+    activityId: string;
+    providerId: string;
+  };
+};
+
 export type Message = {
   analytics: AnalyticsMessage;
   payments: PaymentMessage;
   chat: ChatMessage;
   indexer: IndexerMessage;
+  user: UserMessage;
 };
