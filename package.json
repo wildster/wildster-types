@@ -16,5 +16,8 @@
   "pre-commit": {
     "run": "build",
     "silent": false
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
   }
 }
