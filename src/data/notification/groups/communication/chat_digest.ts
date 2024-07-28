@@ -38,7 +38,7 @@ export const ChatDigestNotification: NotificationType = {
   id: "chat-digest",
   title: "Summary of unread messages",
   description: "Regular digest of unread messages in your chats",
-  parmas: {
+  params: {
     sample,
     variables,
   },

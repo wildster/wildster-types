@@ -10,7 +10,7 @@ export const SupportChatNotification = {
     id: "support-chat",
     title: "New message from Wildster Support",
     description: "Get notified when a Wildster sends you a new message.",
-    parmas: {
+    params: {
         sample,
         variables,
     },

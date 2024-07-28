@@ -23,7 +23,7 @@ export const UserChatNotification: NotificationType = {
   id: "user-chat",
   title: "New user messages",
   description: "Get notified when a user sends your business a new message.",
-  parmas: {
+  params: {
     sample,
     variables,
   },

@@ -26,7 +26,7 @@ export const PrivateChatNotification: NotificationType = {
   id: "private-chat",
   title: "New team messages",
   description: "Get notified when a team member sends you a new message.",
-  parmas: {
+  params: {
     sample,
     variables,
   },

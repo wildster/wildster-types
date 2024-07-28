@@ -2,7 +2,7 @@ export interface NotificationType {
     id: string;
     title: string;
     description: string;
-    parmas: {
+    params: {
         variables: Record<string, string>;
         sample: any;
     };
