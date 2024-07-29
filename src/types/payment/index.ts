@@ -55,10 +55,10 @@ export interface CheckoutManifest {
   };
 
   resourceIds: {
-    activityId: string;
     scheduleId: string;
     locationId: string;
     programId: string;
+    providerId: string;
   };
 
   flags: {
