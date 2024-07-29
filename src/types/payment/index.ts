@@ -65,6 +65,16 @@ export interface CheckoutManifest {
     canReserve: boolean;
     error?: string;
   };
+
+  space?: {
+    marketplace: "player" | "coach";
+    usercase: string;
+    timings: {
+      trackId: string;
+      startTime: string;
+      endTime: string;
+    }[];
+  };
 }
 
 export interface OrderManifest {
