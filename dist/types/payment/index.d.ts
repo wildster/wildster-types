@@ -6,7 +6,7 @@ export interface CheckoutManifest {
         image: string;
         timings: {
             isTimeSameAcrossAll: boolean;
-            dates: [[string]];
+            dates: [string, string][];
         };
     };
     maxParticipants: number;
