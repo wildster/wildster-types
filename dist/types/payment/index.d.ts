@@ -50,6 +50,19 @@ export interface CheckoutManifest {
         canReserve: boolean;
         error?: string;
     };
+    addons: {
+        id: string;
+        name: string;
+        required: boolean;
+        perSession: boolean;
+        items: {
+            id: string;
+            perParticipant: boolean;
+            price: number;
+            hourly?: boolean;
+            hint?: string;
+        }[];
+    }[];
     space?: {
         marketplace: "player" | "coach";
         usecase: string;
