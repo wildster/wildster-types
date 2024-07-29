@@ -68,7 +68,7 @@ export interface CheckoutManifest {
 
   space?: {
     marketplace: "player" | "coach";
-    usercase: string;
+    usecase: string;
     timings: {
       trackId: string;
       startTime: string;
