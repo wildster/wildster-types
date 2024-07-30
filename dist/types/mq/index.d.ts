@@ -41,6 +41,9 @@ export type PaymentMessage = {
     reconcile_invoice: {
         inbvoiceId: string;
     };
+    cancel_order: {
+        orderId: string;
+    };
     cancel_charge: {
         chargeId: string;
     };
