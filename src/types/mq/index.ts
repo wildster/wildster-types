@@ -63,6 +63,9 @@ export type PaymentMessage = {
   process_reservation: {
     orderId: string;
   };
+  confirm_order: {
+    orderId: string;
+  };
 };
 
 export type ChatMessage = {
