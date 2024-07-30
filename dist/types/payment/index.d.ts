@@ -10,7 +10,8 @@ export interface CheckoutManifest {
         };
     };
     maxParticipants: number;
-    pricings: Partial<Record<"weekly" | "monthly" | "dropIn" | "fullTime", {
+    pricings: {
+        id: "weekly" | "monthly" | "dropIn" | "oneTime";
         perParticipant: boolean;
         total: number;
         dueNow: number;
@@ -24,7 +25,7 @@ export interface CheckoutManifest {
             price: number;
             recurrence: "month_1" | "month_15" | "week_1";
         };
-    }>>;
+    }[];
     options: {
         autoEnroll: boolean;
         formsIds: string[];

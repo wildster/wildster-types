@@ -14,28 +14,24 @@ export interface CheckoutManifest {
 
   maxParticipants: number;
 
-  pricings: Partial<
-    Record<
-      "weekly" | "monthly" | "dropIn" | "fullTime",
-      {
-        perParticipant: boolean;
-        total: number;
-        dueNow: number;
-        label: string;
-        hint?: string;
+  pricings: {
+    id: "weekly" | "monthly" | "dropIn" | "oneTime";
+    perParticipant: boolean;
+    total: number;
+    dueNow: number;
+    label: string;
+    hint?: string;
 
-        schedules?: {
-          dueOn: string;
-          price: number;
-        }[];
+    schedules?: {
+      dueOn: string;
+      price: number;
+    }[];
 
-        recurring?: {
-          price: number;
-          recurrence: "month_1" | "month_15" | "week_1";
-        };
-      }
-    >
-  >;
+    recurring?: {
+      price: number;
+      recurrence: "month_1" | "month_15" | "week_1";
+    };
+  }[];
 
   options: {
     autoEnroll: boolean;
