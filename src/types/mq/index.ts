@@ -76,6 +76,7 @@ export type PaymentMessage = {
     orderId: string;
     success: boolean;
     error: string;
+    cancelOrder: boolean;
   };
 };
 
