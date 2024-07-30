@@ -69,6 +69,9 @@ export type PaymentMessage = {
   confirm_order: {
     orderId: string;
   };
+  on_order_signature_complete: {
+    orderId: string;
+  };
 };
 
 export type ChatMessage = {
@@ -125,19 +128,11 @@ export type SpaceMessage = {
 };
 
 export type ClassMessage = {
-  process_form_submission: {
+  process_signature_submission: {
     input: {
       orderId: string;
       parentId: string;
       formIds: string[];
-      participantIds: string[];
-      programId: string;
-    };
-  };
-  process_waiver_submission: {
-    input: {
-      orderId: string;
-      parentId: string;
       waiverIds: string[];
       participantIds: string[];
       programId: string;
