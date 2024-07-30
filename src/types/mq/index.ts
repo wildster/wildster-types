@@ -51,6 +51,9 @@ export type PaymentMessage = {
   auto_cancel_order: {
     orderId: string;
   };
+  delete_order: {
+    orderId: string;
+  };
   reservation_completed: {
     orderId: string;
   };
