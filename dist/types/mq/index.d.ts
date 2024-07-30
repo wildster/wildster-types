@@ -119,6 +119,7 @@ export type ClassMessage = {
             parentId: string;
             formIds: string[];
             participantIds: string[];
+            programId: string;
         };
     };
     process_waiver_submission: {
@@ -127,6 +128,7 @@ export type ClassMessage = {
             parentId: string;
             waiverIds: string[];
             participantIds: string[];
+            programId: string;
         };
     };
 };
