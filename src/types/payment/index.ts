@@ -23,11 +23,13 @@ export interface CheckoutManifest {
     hint?: string;
 
     schedules?: {
+      id: string;
       dueOn: string;
       price: number;
     }[];
 
     recurring?: {
+      id: string;
       price: number;
       recurrence: "month_1" | "month_15" | "week_1";
     };
