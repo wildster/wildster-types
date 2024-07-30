@@ -70,6 +70,8 @@ export type PaymentMessage = {
         success: boolean;
         error: string;
         cancelOrder: boolean;
+        spotIds?: string[];
+        enrollmentIds?: string[];
     };
 };
 export type ChatMessage = {
