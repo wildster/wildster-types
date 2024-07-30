@@ -101,13 +101,11 @@ export type UserMessage = {
 export type SpaceMessage = {
     reserve_space: {
         input: {
-            userId: string;
+            orderId: string;
+            parentId: string;
             spaceId: string;
-            timings: {
-                trackId: string;
-                startTime: string;
-                endTime: string;
-            };
+            input: any;
+            itemIds: string[];
         };
     };
 };
