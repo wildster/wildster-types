@@ -47,10 +47,10 @@ export type PaymentMessage = {
     delete_order: {
         orderId: string;
     };
-    process_reservation: {
+    on_order_requirement_updated: {
         orderId: string;
     };
-    reservation_completed: {
+    process_reservation: {
         orderId: string;
     };
 };
