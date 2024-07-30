@@ -47,6 +47,9 @@ export type PaymentMessage = {
     delete_order: {
         orderId: string;
     };
+    process_reservation: {
+        orderId: string;
+    };
     reservation_completed: {
         orderId: string;
     };
