@@ -89,28 +89,27 @@ export interface CheckoutManifest {
 }
 
 export interface OrderManifest {
-  resource: {
-    providerId: string;
-    participantIds: string[];
-    programId: string;
-    scheduleId: string;
-    locationId: string;
-  };
-
-  chargeAmount: number;
-
-  items: {
-    type: "reservation";
+  orderItems: {
+    id: string;
     participantId: string;
-    price: number;
-    quantity: number;
     description: string;
+    quantity: number;
+    enrollmentIds: string[];
   }[];
 
-  futureCharges: { dueOn: number; amount: number }[];
+  charges?: {
+    id: string;
+    type: "charge" | "refund";
+    name: string;
+    dueOn: string;
+    price: number;
+  }[];
 
-  subscriptions: {
-    dueOn: "1_st" | "15_th" | "sunday";
-    amount: number;
+  recurring?: {
+    id: string;
+    price: number;
+    recurrence: "month_1" | "month_15" | "week_1";
   };
+
+  state: any;
 }
