@@ -44,6 +44,9 @@ export type PaymentMessage = {
     cancel_charge: {
         chargeId: string;
     };
+    confirm_charge: {
+        orderId: string;
+    };
     auto_cancel_order: {
         orderId: string;
     };
