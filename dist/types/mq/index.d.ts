@@ -98,10 +98,43 @@ export type UserMessage = {
         providerId: string;
     };
 };
+export type SpaceMessage = {
+    reserve_space: {
+        input: {
+            userId: string;
+            spaceId: string;
+            timings: {
+                trackId: string;
+                startTime: string;
+                endTime: string;
+            };
+        };
+    };
+};
+export type ClassMessage = {
+    process_form_submission: {
+        input: {
+            orderId: string;
+            formId: string;
+            parentId: string;
+            participantId: string;
+        };
+    };
+    process_waiver_submission: {
+        input: {
+            orderId: string;
+            formId: string;
+            parentId: string;
+            participantId: string;
+        };
+    };
+};
 export type Message = {
     analytics: AnalyticsMessage;
     payments: PaymentMessage;
     chat: ChatMessage;
     indexer: IndexerMessage;
     user: UserMessage;
+    space: SpaceMessage;
+    class: ClassMessage;
 };
