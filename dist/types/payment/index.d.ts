@@ -73,6 +73,7 @@ export interface CheckoutManifest {
     };
 }
 export interface OrderManifest {
+    checkoutManifest: CheckoutManifest;
     orderItems: {
         id: string;
         participantId: string;
