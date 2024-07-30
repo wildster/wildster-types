@@ -44,12 +44,19 @@ export interface CheckoutManifest {
   cancellationPolicy: {
     cancellationPolicyId: string;
     description: string;
-    conditions: {
-      startDate: string;
-      endDate: string;
-      refundAmount: number;
-      refundAmountType: "percentage" | "flat";
-    }[];
+    conditions: (
+      | {
+          isEnd: false;
+          startDate: string;
+          endDate: string;
+          refundAmount: number;
+          refundAmountType: "percentage" | "flat";
+        }
+      | {
+          isEnd: true;
+          startDate: string;
+        }
+    )[];
   };
 
   resourceIds: {
