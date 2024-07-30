@@ -72,6 +72,11 @@ export type PaymentMessage = {
   on_order_signature_complete: {
     orderId: string;
   };
+  on_order_reservation_complete: {
+    orderId: string;
+    success: boolean;
+    error: string;
+  };
 };
 
 export type ChatMessage = {
