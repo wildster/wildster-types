@@ -53,7 +53,7 @@ export type PaymentMessage = {
     on_order_requirement_updated: {
         orderId: string;
     };
-    process_reservation: {
+    process_incomming_order: {
         orderId: string;
     };
     confirm_order: {
