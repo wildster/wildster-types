@@ -116,20 +116,16 @@ export type ClassMessage = {
         input: {
             orderId: string;
             parentId: string;
-            forms: {
-                formId: string[];
-                participantId: string;
-            }[];
+            formIds: string[];
+            participantIds: string[];
         };
     };
     process_waiver_submission: {
         input: {
             orderId: string;
             parentId: string;
-            waivers: {
-                formId: string;
-                participantId: string;
-            }[];
+            waiverIds: string[];
+            participantIds: string[];
         };
     };
 };
