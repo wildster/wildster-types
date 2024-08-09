@@ -138,6 +138,14 @@ export type ClassMessage = {
         };
     };
 };
+export type MessagingMessage = {
+    send_email: {
+        data: any;
+    };
+    send_sms: {
+        data: any;
+    };
+};
 export type Message = {
     analytics: AnalyticsMessage;
     payments: PaymentMessage;
@@ -146,4 +154,5 @@ export type Message = {
     user: UserMessage;
     space: SpaceMessage;
     class: ClassMessage;
+    messaging: MessagingMessage;
 };
