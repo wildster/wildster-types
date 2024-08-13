@@ -1,4 +1,8 @@
-import { CommunicationNotificationGroup } from "./groups/communication/index.js";
+import { ChatDigestNotificationFamily, DirectMessageNotificationFamily, } from "./chat/index.js";
 export const Notifications = [
-    CommunicationNotificationGroup,
+    {
+        id: "communication",
+        title: "Communication",
+        familiy: [DirectMessageNotificationFamily, ChatDigestNotificationFamily],
+    },
 ];

@@ -7,9 +7,14 @@ export interface NotificationType {
         sample: any;
     };
 }
-export interface NotificationGroup {
+export interface NotificationFamily {
     id: string;
     title: string;
     description: string;
     notifications: NotificationType[];
+}
+export interface NotificationGroup {
+    id: string;
+    title: string;
+    familiy: NotificationFamily[];
 }

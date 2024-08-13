@@ -1,7 +1,13 @@
-import { z } from "zod";
 import { NotificationGroup } from "../../types/notification/index.js";
-import { CommunicationNotificationGroup } from "./groups/communication/index.js";
+import {
+  ChatDigestNotificationFamily,
+  DirectMessageNotificationFamily,
+} from "./chat/index.js";
 
 export const Notifications: NotificationGroup[] = [
-  CommunicationNotificationGroup,
+  {
+    id: "communication",
+    title: "Communication",
+    familiy: [DirectMessageNotificationFamily, ChatDigestNotificationFamily],
+  },
 ];
