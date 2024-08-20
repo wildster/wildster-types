@@ -93,6 +93,9 @@ export type ChatMessage = {
         channelName: string;
         reverseChannelName: string;
     };
+    dispatch_chat_digest: {
+        userId: bigint;
+    };
 };
 export type IndexerMessage = {
     index_lookup: {
