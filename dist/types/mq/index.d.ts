@@ -155,6 +155,11 @@ export type NotificationMessage = {
         type: string;
         variables: Record<string, any>;
     };
+    internal_send_email: {
+        to: string;
+        body: string;
+        from: string;
+    };
 };
 export type Message = {
     analytics: AnalyticsMessage;
