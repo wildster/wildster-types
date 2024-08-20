@@ -15,11 +15,13 @@ export const DialiyChatDigest = {
                     channelName: "Private Chat",
                     message: "Hello, this is a test message",
                     senderName: "John Doe",
+                    unreadCount: 4,
                 },
                 {
                     channelName: "Private Chat",
                     message: "Hello, this is a test message",
                     senderName: "John Doe",
+                    unreadCount: 6,
                 },
             ],
             deepLink: "https://chat.wildster.com/private-chat/123456789",
