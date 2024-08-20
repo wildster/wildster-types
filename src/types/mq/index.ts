@@ -160,6 +160,14 @@ export type MessagingMessage = {
   };
 };
 
+export type NotificationMessage = {
+  send_notification: {
+    userId: string;
+    type: string;
+    variables: Record<string, any>;
+  };
+};
+
 export type Message = {
   analytics: AnalyticsMessage;
   payments: PaymentMessage;
@@ -169,4 +177,5 @@ export type Message = {
   space: SpaceMessage;
   class: ClassMessage;
   messaging: MessagingMessage;
+  notification: NotificationMessage;
 };
