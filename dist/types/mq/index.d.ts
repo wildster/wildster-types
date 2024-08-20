@@ -159,6 +159,7 @@ export type NotificationMessage = {
         to: string;
         body: string;
         from: string;
+        subject: string;
     };
 };
 export type Message = {
