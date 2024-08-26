@@ -6,6 +6,8 @@ export const WildsterSupportDirectMessage = {
         variables: {
             message: "Message content",
             deepLink: "Link to the chat",
+            senderName: "Name of the sender",
+            channelName: "Name of the channel",
         },
         sample: {
             message: "Hello, this is a test message",
@@ -22,6 +24,7 @@ export const ProviderChatDirectMessage = {
             message: "Message content",
             deepLink: "Link to the chat",
             senderName: "Name of the sender",
+            channelName: "Name of the channel",
         },
         sample: {
             message: "Hello, this is a test message",
@@ -39,6 +42,7 @@ export const SupportChatDirectMessage = {
             message: "Message content",
             deepLink: "Link to the chat",
             userName: "Name of the sender",
+            channelName: "Name of the channel",
         },
         sample: {
             message: "Hello, this is a test message",

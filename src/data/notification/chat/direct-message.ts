@@ -8,6 +8,8 @@ export const WildsterSupportDirectMessage: NotificationType = {
     variables: {
       message: "Message content",
       deepLink: "Link to the chat",
+      senderName: "Name of the sender",
+      channelName: "Name of the channel",
     },
     sample: {
       message: "Hello, this is a test message",
@@ -25,6 +27,7 @@ export const ProviderChatDirectMessage: NotificationType = {
       message: "Message content",
       deepLink: "Link to the chat",
       senderName: "Name of the sender",
+      channelName: "Name of the channel",
     },
     sample: {
       message: "Hello, this is a test message",
@@ -43,6 +46,7 @@ export const SupportChatDirectMessage: NotificationType = {
       message: "Message content",
       deepLink: "Link to the chat",
       userName: "Name of the sender",
+      channelName: "Name of the channel",
     },
     sample: {
       message: "Hello, this is a test message",
