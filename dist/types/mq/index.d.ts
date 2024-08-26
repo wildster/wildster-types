@@ -161,6 +161,13 @@ export type NotificationMessage = {
         from: string;
         subject: string;
     };
+    internal_send_push: {
+        userId: string;
+        title: string;
+        body: string;
+        subTitle: string;
+        count: any;
+    };
 };
 export type Message = {
     analytics: AnalyticsMessage;
