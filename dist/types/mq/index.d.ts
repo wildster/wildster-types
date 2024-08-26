@@ -166,7 +166,8 @@ export type NotificationMessage = {
         title: string;
         body: string;
         subTitle: string;
-        count: any;
+        count: number;
+        payload: any;
     };
 };
 export type Message = {
