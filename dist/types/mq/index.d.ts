@@ -97,6 +97,7 @@ export type ChatMessage = {
         channelId: bigint;
         messageId: bigint;
         userId: bigint;
+        senderName: string;
     };
 };
 export type IndexerMessage = {
