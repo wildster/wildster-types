@@ -87,13 +87,15 @@ export type ChatMessage = {
     message_added: {
         channelId: bigint;
         senderId: bigint;
-        text: string;
         messageId: bigint;
         type: "user_chat" | "provider_chat" | "internal_chat" | "support_chat";
-        channelName: string;
-        reverseChannelName: string;
     };
     dispatch_chat_digest: {
+        userId: bigint;
+    };
+    internal_prepare_push_notification: {
+        channelId: bigint;
+        messageId: bigint;
         userId: bigint;
     };
 };
